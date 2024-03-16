@@ -1,0 +1,228 @@
+.main{
+    border: 3px solid rgb(241, 15, 15);
+    height: 500px;
+    margin-top: 100px;
+    background: rgb(26, 18, 18);
+}
+.headding{
+    color:palevioletred;
+}
+
+
+.face{
+    background: chartreuse;
+    height: 120px;
+    width: 150px;
+    border-radius: 50% 50% 0 0;
+    margin: auto;
+    margin-top: 20px;
+}
+
+
+.eyes{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 90px
+}
+
+
+.leye,.reye{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: black;
+}
+
+
+.body1{
+    display: flex;
+    justify-content: space-evenly;
+    width: 250px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+
+.larm{
+    height: 75px;
+    width: 25px;
+    background: chartreuse;
+    border-radius: 50px;
+    margin-top: 10px;
+}
+
+
+.center{
+    height: 150px;
+    width: 150px;
+    background: chartreuse;
+    border-radius: 0 0 40% 40%;
+}
+
+
+.rarm{
+    height: 75px;
+    width: 25px;
+    background: chartreuse;
+    border-radius: 50px;
+    margin-top: 10px;
+}
+
+
+.legs{
+    display: flex;
+    justify-content: space-evenly;
+    width: 150px;
+    margin: auto;
+    margin-top: -20px;  
+}
+
+
+.lleg{
+    height: 75px;
+    width: 25px;
+    background: chartreuse;
+    border-radius: 50px;
+}
+
+
+.rleg{
+    height: 75px;
+    width: 25px;
+    background: chartreuse;
+    border-radius: 50px;
+}
+
+
+.main:hover .face{
+    transform: scale(0.5);
+}
+.main:hover .larm{
+    transform-origin:top ;
+    transform: rotate(60deg)
+}
+.main:hover .rarm{
+    transform-origin:top ;
+    transform: rotate(-60deg)
+}
+.main:hover .center{
+    transform: rotate(180deg)
+}
+.main:hover .lleg{
+    transform-origin:top ;
+    transform: rotate(70deg);
+}
+.main:hover .rleg{
+    transform-origin:top ;
+    transform: rotate(-70deg);
+}
+
+.main:hover .face{
+    background-color:yellow ;
+    animation: ani 2s infinite;
+}
+@keyframes ani{
+    0%{
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+    50%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(50%);
+    }
+}
+.main:hover .center{
+    background-color:rgb(239, 61, 12) ;
+    animation: ani1 2s infinite;
+}
+@keyframes ani1{
+    0%{
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+    50%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(50%);
+    }
+}
+.main:hover .larm{
+    background-color:rgb(29, 16, 220) ;
+    animation: ani2 2s infinite;
+}
+@keyframes ani2{
+    0%{
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+    50%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(50%);
+    }
+}
+.main:hover .rarm{
+    background-color:rgb(29, 16, 220) ;
+    animation: ani3 2s infinite;
+}
+@keyframes ani3{
+    0%{
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+    50%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(50%);
+    }
+}
+.main:hover .lleg{
+    background-color:rgb(241, 13, 188) ;
+    animation: ani4 2s infinite;
+}
+@keyframes ani4{
+    0%{
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+    50%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(50%);
+    }
+}
+.main:hover .rleg{
+    background-color:rgb(241, 13, 188) ;
+    animation: ani5 2s infinite;
+}
+@keyframes ani5{
+    0%{
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+    50%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(50%);
+    }
+}
+ 
